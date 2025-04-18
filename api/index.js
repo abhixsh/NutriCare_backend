@@ -27,7 +27,7 @@ const client = new OpenAIClient(
 );
 
 app.post('/', (req, res) => {
-    res.json({ message: 'Hello World' });
+    res.json({ message: 'Hello World!' });
 });
 
 app.use('/recipe', recipeRouter);
