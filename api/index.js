@@ -8,10 +8,10 @@ dotenv.config();
 
 const app = express();
 
-const recipeRouter = require('./src/modules/recipe/routes');
-const doctorRouter = require('./src/modules/doctor/routes');
-const articleRouter = require('./src/modules/article/routes');
-const userRouter = require('./src/modules/user/routes');
+const recipeRouter = require('../src/modules/recipe/routes');
+const doctorRouter = require('../src/modules/doctor/routes');
+const articleRouter = require('../src/modules/article/routes');
+const userRouter = require('../src/modules/user/routes');
 
 app.use(cors({ origin: '*' }));
 app.use(express.json());
