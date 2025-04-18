@@ -1,48 +1,80 @@
-# NutriCare Backend
+<div align="center">
 
-Welcome to the NutriCare Backend repository. This project is the backend service for the NutriCare application, which provides nutritional information and health tracking features.
+<img src="assets/logobar.png" alt="NutriCare Logo" width="95%">
 
-## Table of Contents
-- [Installation](#installation)
-- [Running Locally](#running-locally)
-    - [Using npm](#using-npm)
-    - [Using nodemon](#using-nodemon)
-    - [Using Docker](#using-docker)
-- [CRUD Operations](#crud-operations)
-- [Azure DevOps](#azure-devops)
-- [Contributing](#contributing)
-- [License](#license)
+<br/>
+
+# NutriCare – Healthy Recipe Generator
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+NutriCare is a web app that gives AI-based healthy recipes and connects users with doctors.
+
+</div>
+
+# About the Backend
+
+The backend handles API requests, user data, recipe generation, and doctor directory management. It connects with OpenAI to generate personalized recipes and Azure services for secure hosting and AI interactions. MongoDB stores users, recipes, doctors, and articles.
+
+## Features
+
+- **User Authentication**: Sign up, login, and role-based access
+- **Recipe Generation**: Uses OpenAI to suggest healthy meals
+- **Doctor Management**: View and manage doctor/nutritionist profiles
+- **Article Management**: Add and update health articles
+- **Admin Access**: Control users, recipes, and content (future)
+- **Health Filters**: Filter recipes by illness and allergen
+- **Secure API**: JWT-based authentication and request validation
+
+## Live Demo
+
+Full demo video: [https://nutricareweb.vercel.app](https://nutricareweb.vercel.app)
+
+## Technology Stack
+
+- **Backend**: Node.js & Express.js
+- **Database**: MongoDB
+- **AI Integration**: Azure OpenAI
+- **Hosting**: Azure Web App, Docker
+- **CI/CD**: Azure Container Registry, Azure DevOps
+
+## Frontend Repository
+
+<a href="https://github.com/chaminipalliyaguru/NutriCare-Frontend" target="_blank">
+  <img width="95%" alt="Frontend Repo" src="https://i.ibb.co/7xRJpGDF/Group-2.png"/>
+</a>
+<div align="center">
+  <strong>Click here to go to the backend repository</strong>
+</div>
+
+## Local Development
+
+### Prerequisites
+
+- Node.js, npm and Docker installed
 
 ## Installation
 
 To get started, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/NutriCare_be.git
+git clone https://github.com/abhixsh/NutriCare_backend
 cd NutriCare_be
 npm install
 ```
 
-## Running Locally
-
-### Using npm
-
-To run the application using npm, use the following command:
-
-```bash
-npm start
-```
-
-### Using nodemon
-
-Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. To use nodemon, install it globally and then run the application:
+To run the application using nodemon, use the following command:
 
 ```bash
 npm install -g nodemon
-nodemon src/index.js
+nodemon index.js
 ```
-
-### Using Docker
 
 To run the application using Docker, follow these steps:
 
@@ -58,37 +90,17 @@ To run the application using Docker, follow these steps:
     docker run -p 3000:3000 nutricare-backend
     ```
 
-## CRUD Operations
-
-The NutriCare Backend provides CRUD (Create, Read, Update, Delete) operations for managing nutritional data and user information. Below are the endpoints available:
-
-- **Create**: Add new nutritional data or user information.
-- **Read**: Retrieve existing data.
-- **Update**: Modify existing data.
-- **Delete**: Remove data.
-
-Refer to the API documentation for detailed information on each endpoint and how to use them.
-
-## Azure DevOps
-
-This project uses Azure DevOps for continuous integration and deployment. The pipeline is defined in the `azure-pipelines.yml` file. To set up Azure DevOps:
-
-1. Create a new project in Azure DevOps.
-2. Set up a new pipeline and connect it to your GitHub repository.
-3. Configure the pipeline using the `azure-pipelines.yml` file in the repository.
-4. Set up any necessary service connections and environment variables in the Azure DevOps project settings.
-
 ## Contributing
 
-We welcome contributions to the NutriCare Backend project. To contribute:
+A win-win cooperation! We invite you to participate in this project. Let's work together to create the most useful tool for developers on the web today.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes and push the branch to your fork.
-4. Create a pull request to the main repository.
+### How to Contribute
 
-Please ensure your code follows the project's coding standards and includes appropriate tests.
+- Issues: ask questions and submit your features
+- Pull requests: send your improvements to the current codebase
+
+Together, we can make this project **better** every day!
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
