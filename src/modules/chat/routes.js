@@ -6,7 +6,6 @@ dotenv.config();
 
 const router = express.Router();
 
-// Azure OpenAI configuration
 const client = new AzureOpenAI({
   apiKey: process.env.OPEN_AI_SECRET, 
   apiVersion: "2024-05-01-preview",
