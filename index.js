@@ -4,7 +4,6 @@ const { OpenAIClient } = require("@azure/openai");
 const { AzureKeyCredential } = require("@azure/core-auth");
 const dotenv = require('dotenv');
 const chatRouter = require('./src/modules/chat/routes');
- // add .default because you're mixing ES module + CommonJS
 
 dotenv.config();
 
@@ -13,13 +12,12 @@ console.log("OPEN_AI_SECRET:", process.env.OPEN_AI_SECRET);
 console.log("DEPLOY_ID:", process.env.DEPLOY_ID);
 
 const app = express();
-const PORT = process.env.PORT || 3003;
 const recipeRouter = require('./src/modules/recipe/routes');
 const doctorRouter = require('./src/modules/doctor/routes');
 const articleRouter = require('./src/modules/article/routes');
-const userRouter = require('./src/modules/user/routes');  
+const userRouter = require('./src/modules/user/routes');
 
-app.use(cors({ origin: '*' })); 
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -48,13 +46,8 @@ app.post('/ask-bot', async (req, res) => {
         res.send(result.choices[0].message);
     } catch (error) {
         console.log(error);
-        res.send("Error");
+        res.status(500).send("Error");
     }
 });
 
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
-
+module.exports = app;
