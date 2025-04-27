@@ -56,7 +56,7 @@ async function updateRecipe(req, res) {
         if (req.body.condition) {
             recipe.condition = req.body.condition;
         }
-        if (req.body.recipeContent) { // New field
+        if (req.body.recipeContent) { 
             recipe.recipeContent = req.body.recipeContent;
         }
         await recipe.save();
