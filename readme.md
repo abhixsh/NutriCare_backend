@@ -50,7 +50,7 @@ Full demo video: [https://nutricareweb.vercel.app](https://nutricareweb.vercel.a
   <img width="95%" alt="Frontend Repo" src="https://i.ibb.co/7xRJpGDF/Group-2.png"/>
 </a>
 <div align="center">
-  <strong>Click here to go to the backend repository</strong>
+  <strong>Click here to go to the frontend repository</strong>
 </div>
 
 ## Local Development
