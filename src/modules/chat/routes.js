@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
 
     const result = await client.chat.completions.create({
       messages: [
-        { role: "system", content: "You are a helpful assistant." },
+        { role: "system", content: "You are a helpful assistant for health.a friendly and helpful virtual health assistant.Only answer questions related to: Nutrition and healthy recipes, Illness-based diet suggestions, Fitness and wellness, Healthy living tips" },
         { role: "user", content: userInput },
       ],
       model: process.env.DEPLOY_ID, 
